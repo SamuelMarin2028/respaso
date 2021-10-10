@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Actividad 1</title>
+</head>
+<style>
+	.hola{
+	position: absolute;
+	top: 70%;
+	left: 5%;
+	width: 10%;
+	height: 13%;
+	background: #256464;
+	border: solid 5px;
+	font-size: 40px;
+ 	font-family:Brush Script MT;
+ 	border-radius: 20px;
+}
+.texto{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	width: 40%;
+	height: 80%;
+	background: #D6A4A6 ;
+	border: solid 5px;
+	font-size: 80px;
+ 	font-family:Brush Script MT;
+ 	border-radius: 20px;
+	}
+.a2{
+	position: absolute;
+	top: 80%;
+	left: 30%;
+	width: 10%;
+	height: 10%;
+	background: #86DFDF;
+	border: solid 5px;
+	font-size: 80px;
+ 	font-family:Brush Script MT;
+ 	border-radius: 20px;
+	}
+.a3{
+	position: absolute;
+	top: 40%;
+	left: 8%;
+	font-size: 50px;
+ 	font-family:Brush Script MT;
+}
+.a31{
+	position: absolute;
+	top: 100%;
+	left: -5%;
+	width: 110%;
+	height: 50%;
+	font-size: 50px;
+ 	font-family:Brush Script MT;
+	border: solid 5px;
+	background: #86DFDF;
+	border-radius: 20px;
+}
+.a5{
+	position: absolute;
+	top: 20%;
+	left: 8%;
+  	font-size: 50px;
+ 	font-family:Brush Script MT;
+ 	width: 150%;
+}
+.a51{
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	width: 25%;
+	height: 55%;
+	font-size: 50px;
+	font-family:Brush Script MT;
+	border: solid 5px;
+	background: #86DFDF;
+	border-radius: 20px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.r{	position: absolute;
+	top: 4%;
+	left: 8%;
+	width: 40%;
+	height: 10%;
+	background: #86DFDF;
+	border: solid 5px;
+	font-size: 65px;
+ 	font-family:Brush Script MT;
+ 	border-radius: 20px;
+	}
+</style>
+<body background="ñ.jpg" style=" background-size: cover;">
+	<div>
+	<div id="respu" class="texto"></div>
+	<div id="res" class="r">El restaurante de lola</div>
+	<div id="res" class=""></div>
+	<div class="hola" onclick="agregar()">Agregar</div>
+	<form>
+		<div class="a5"><label>Nombre del producto:</label><br>
+		<input type="text" id="nom" placeholder="Nombre del producto" class="a51"></div>
+		<div class="a3"><label>Precio:</label><br>
+		<input type="text" id="pre" placeholder="Precio" class="a31"></div>
+	</form>
+	</div>
+<script>
+	function agregar() {
+		nom1=nom.value;
+		pre1=pre.value;
+		nuevot="<div class='dife'>"+nom1+" "+pre1+"</div>";
+		conte=respu.innerHTML;
+		conte=conte+nuevot;
+		respu.innerHTML=conte;
+		console.log(conte);
+	}
+</script>
+</body>
+</html>

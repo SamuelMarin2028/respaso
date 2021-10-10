@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>actividad 2</title>
+</head>
+<style>
+	body{
+ background-color: #807775 ;
+width: 30px;
+height: 10px;
+ }
+		.ni{
+	position: absolute;
+	top: 50px;
+	left: 70px;
+	width: 90%;
+	height: 80%;
+	background:  #2858D6 ;
+    color: white;
+    background-image: url(mar.jpg);
+    background-size: cover;
+    font-size: 40px;
+    font-family: sans-serif;
+border-radius: 20px;}
+		.ce{
+		position: absolute;
+		top: 60px;
+		left: 210px;
+		width: 200px;
+		height: 200px;
+		background-image: url(gta.jpg);
+		background-size: cover;
+		}
+	</style>
+	<div class="ni"></div>
+	<div class="ce" id="so" onclick= "boti()"></div>
+	<audio src="lo.mp3"  id="soni"></audio>
+	<script>
+		
+		function boti(){
+			soni.play();
+			 numx=Math.floor((Math.random() * (1101-70))+70);
+			 numy=Math.floor((Math.random() * (381-70))+70);
+			so.style.left=numx+"px";
+			so.style.top=numy+"px";
+			console.log("so");
+
+		}
+	</script>
+
+<body>
+
+</body>
+</html>
